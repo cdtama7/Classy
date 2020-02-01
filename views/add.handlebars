@@ -1,0 +1,32 @@
+<div id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h1>{{msg}}</h1>
+                <h2>Teach a class!</h2>
+                <a href="/"><button class="btn btn-lg btn-primary">
+                        <span class="fa "></span> Available Courses
+                    </button></a>
+                <form class="clearfix mb-4" action="POST">
+                    <div class="form-group">
+                        <label for="course-name">Enter Course Name</label>
+                        <input type="text" id="course-name" class="form-control" aria-describedby="course-name"
+                            placeholder="Enter Course Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="course-description">Enter Course Description</label>
+                        <textarea class="form-control" id="Course-description" aria-describedby="Course-description"
+                            placeholder="Enter Course Description"></textarea>
+                    </div>
+                    <button id="submit" class="btn btn-primary float-right">Submit</button>
+                </form>
+                <a href="/cart"><button class="btn btn-lg btn-primary">
+                        <span class="fa "></span> Shopping Cart
+                    </button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
