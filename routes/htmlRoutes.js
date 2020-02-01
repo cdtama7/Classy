@@ -21,7 +21,22 @@ module.exports = function(app) {
       });
     });
   });
-
+  app.get("/add", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.render("add", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+  app.get("/cart", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.render("cart", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
