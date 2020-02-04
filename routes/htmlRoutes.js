@@ -5,7 +5,8 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("index", {
-        msg: "Welcome!",
+        msg: "Classy!",
+        subtitle: "Where students & tutors unite!",
         examples: dbExamples
       });
     });
@@ -24,7 +25,8 @@ module.exports = function(app) {
   app.get("/add", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("add", {
-        msg: "Welcome!",
+        msg: "Classy!",
+        subtitle: "Where students & tutors unite!",
         examples: dbExamples
       });
     });
@@ -32,7 +34,8 @@ module.exports = function(app) {
   app.get("/cart", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("cart", {
-        msg: "Welcome!",
+        msg: "Classy!",
+        subtitle: "Where students & tutors unite!",
         examples: dbExamples
       });
     });

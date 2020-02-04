@@ -12,8 +12,8 @@
                 <h2>Your Shopping Cart!</h2>
                 <ul id="example-list" class="list-group">
                     {{#each examples}}
-                    <li data-id="{{this.id}}" class="list-group-item">
-                        <a href="example/{{this.id}}">{{this.text}}</a>
+                    <li data-id="{{this.dataValues.id}}" class="list-group-item">
+                        <a href="example/{{this.dataValues.id}}">{{this.dataValues.text}}</a>
                         <button class="btn btn-danger float-right delete">ｘ</button>
                     </li>
                     {{/each}}
