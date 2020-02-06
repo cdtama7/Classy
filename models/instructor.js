@@ -1,3 +1,4 @@
+/* eslint-disable camel-case */
 module.exports = function(sequelize, DataTypes) {
   var Instructor = sequelize.define("Instructor", {
     first_name: {

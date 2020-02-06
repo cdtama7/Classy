@@ -1,3 +1,4 @@
+/* eslint-disable camel-case */
 var db = require("../models");
 
 module.exports = function(app) {

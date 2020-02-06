@@ -1,3 +1,4 @@
+/* eslint-disable camel-case */
 // Get references to page elements
 var $exampleText = $("#course-name");
 var $exampleDescription = $("#course-description");
