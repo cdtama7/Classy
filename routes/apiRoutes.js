@@ -34,7 +34,14 @@ module.exports = function(app) {
     db.Student.findOne({ where: { login_name: req.params.login_name } }).then(
       function(dbExamples) {
         console.log("login in the get = " + req.params.login_name);
-        res.json(dbExamples);
+        // res.json(dbExamples);
+        res.redirect("/index");
+        // res.render("index", {
+        //   msg: "Classy!",
+        //   subtitle: "Where students & tutors unite!",
+        //   examples: dbExamples
+        // });
+        console.log("after ");
       }
     );
   });

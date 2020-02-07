@@ -66,7 +66,7 @@ var API = {
     });
   },
   getLogin: function(login_name) {
-    console.log("inside getLogin - $loginUser = " + $loginUser);
+    console.log("inside getLogin - $loginUser = " + login_name);
     return $.ajax({
       url: "api/login/" + login_name,
       type: "GET"
@@ -244,13 +244,12 @@ var handleLogins = function(event) {
     );
     return;
   }
-  console.log("$loginUser 1 = " + newLogin.login_namer);
-  var idToValidate = $(this.newLogin.login_name)
-    .parent()
-    .attr(newLogin.login_name);
-  console.log("$loginUser 2 = " + newLogin.login_namer);
-  API.getLogin(idToValidate).then(function() {
-    refreshExamples();
+  console.log("$loginUser 1 = " + newLogin.login_name);
+  var idToValidate = newLogin.login_name;
+  console.log("$loginUser 2 = " + newLogin.login_name);
+  API.getLogin(idToValidate).then(function(value) {
+    console.log("$loginUser 3 = " + value);
+    window.location.replace("/index");
   });
 };
 
