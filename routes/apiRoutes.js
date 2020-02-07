@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 var db = require("../models");
 
 module.exports = function(app) {
@@ -12,6 +13,38 @@ module.exports = function(app) {
   app.post("/api/examples", function(req, res) {
     db.Example.create(req.body).then(function(dbExample) {
       res.json(dbExample);
+    });
+  });
+
+  // Create a new student
+  app.post("/api/newstudent", function(req, res) {
+    db.Student.create(req.body).then(function(dbExample) {
+      res.json(dbExample);
+    });
+  });
+
+  // Create a new instructor
+  app.post("/api/newinstructor", function(req, res) {
+    db.Instructor.create(req.body).then(function(dbExample) {
+      res.json(dbExample);
+    });
+  });
+  // Get student by login name
+  app.get("/api/login/:login_name", function(req, res) {
+    db.Student.findOne({ where: { login_name: req.params.login_name } }).then(
+      function(dbExamples) {
+        console.log("login in the get = " + req.params.login_name);
+        res.json(dbExamples);
+      }
+    );
+  });
+
+  // Get instructor by login name
+  app.get("/api/login/:login_name", function(req, res) {
+    db.Instructor.findOne({
+      where: { login_name: req.params.login_name }
+    }).then(function(dbExamples) {
+      res.json(dbExamples);
     });
   });
 

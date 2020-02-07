@@ -1,0 +1,57 @@
+<div id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h1>{{msg}}</h1>
+                <h2>Register as a new student!</h2>
+                <a href="/"><button class="btn btn-lg btn-primary">
+                        <span class="fa "></span> Available Courses
+                    </button></a>
+                <form class="clearfix mb-4" action="POST">
+                    <div class="form-group">
+                        <label for="student-fname">Student's First Name</label>
+                        <input type="text" id="student-fname" class="form-control" aria-describedby="student-fname"
+                            placeholder="Enter Student's first Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-mname">Student's Middle Name</label>
+                        <input type="text" id="student-mname" class="form-control" aria-describedby="student-mname"
+                            placeholder="Enter Student's middle Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-lname">Student's Last Name</label>
+                        <input type="text" id="student-lname" class="form-control" aria-describedby="student-lname"
+                            placeholder="Enter Student's last Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-login">Student's Login Name</label>
+                        <input type="text" id="student-login" class="form-control" aria-describedby="student-login"
+                            placeholder="Enter Student's Login Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-phone">Student's Phone Number</label>
+                        <input type="text" id="student-phone" class="form-control" aria-describedby="student-phone"
+                            placeholder="Enter Student's Phone number">
+                    </div>
+                    {{!-- 
+                    <div class="form-group">
+                        <label for="course-description">Enter Course Description</label>
+                        <textarea class="form-control" id="course-description" aria-describedby="course-description"
+                            placeholder="Enter Course Description"></textarea>
+                    </div> --}}
+                    <button id="studentregister" class="btn btn-primary float-right">Register</button>
+                </form>
+                <a href="/cart"><button class="btn btn-lg btn-primary">
+                        <span class="fa "></span> Shopping Cart
+                    </button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
