@@ -1,4 +1,4 @@
-/* eslint-disable camel-case */
+/* eslint-disable camelcase */
 module.exports = function(sequelize, DataTypes) {
   var StudentEnrollment = sequelize.define("studentEnrollment", {
     student_credits: {
