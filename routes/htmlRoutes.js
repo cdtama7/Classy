@@ -45,17 +45,17 @@ module.exports = function(app) {
     });
   });
 
-  // Get student by login name
-  app.post("/login", function(req, res) {
-    db.Student.findOne({ where: { login_name: req.params.login_name } }).then(
-      function(dbExample) {
-        console.log("login in the post = " + req.params.login_name);
-        res.render("example", {
-          example: dbExample
-        });
-      }
-    );
-  });
+  // // Get student by login name
+  // app.post("/login", function(req, res) {
+  //   db.Student.findOne({ where: { login_name: req.params.login_name } }).then(
+  //     function(dbExample) {
+  //       console.log("login in the post = " + req.params.login_name);
+  //       res.render("example", {
+  //         example: dbExample
+  //       });
+  //     }
+  //   );
+  // });
 
   app.get("/newstudent", function(req, res) {
     db.Student.findAll({}).then(function(dbExamples) {
