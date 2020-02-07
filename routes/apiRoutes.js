@@ -32,7 +32,7 @@ module.exports = function(app) {
   // Get student by login name
   app.get("/api/login/:login_name", function(req, res) {
     db.Student.findOne({ where: { login_name: req.params.login_name } }).then(
-      function(dbExamples) {
+      function() {
         console.log("login in the get = " + req.params.login_name);
         // res.json(dbExamples);
         res.redirect("/index");
