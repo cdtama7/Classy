@@ -1,35 +1,72 @@
-<div id="home">
-    <div class="container">
-        <div class="row">
-            <div class="col-8 offset-2">
-                <h1>{{msg}}</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-                <h2>{{subtitle}}</h2>
-                <hr>
-                <h2>Teach a class!</h2>
-                <a href="/"><button class="btn btn-lg btn-primary m-2">
-                        <span class="fa "></span> Available Courses
-                    </button></a>
-                <form class="clearfix mb-4" action="POST">
-                    <div class="form-group">
-                        <label for="course-name">Enter Course Name</label>
-                        <input type="text" id="course-name" class="form-control" aria-describedby="course-name"
-                            placeholder="Enter Course Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="course-description">Enter Course Description</label>
-                        <textarea class="form-control" id="course-description" aria-describedby="course-description"
-                            placeholder="Enter Course Description"></textarea>
-                    </div>
-                    <button id="submit" class="btn btn-primary float-right">Submit</button>
-                </form>
-                <a href="/cart"><button class="btn btn-lg btn-primary m-2">
-                        <span class="fa "></span> Shopping Cart
-                    </button></a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+        Classy - One stop shop for tutors and students to provide and receive
+        services
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- local style sheet -->
+    <link rel="stylesheet" href="../public/styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Moment js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS CDN  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="jumbo">
+            <div class="jumbotext col-8 text-center">
+                <h1>Classy</h1>
+                <p class="lead">
+                    <i class="fa fa-book"></i>/<i class="fa fa-apple"></i> Where
+                    Students and Tutors Unite
+                </p>
+            </div>
+            {{!-- <br> --}}
+        </div>
+    </div>
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <h2>Teach a class!</h2>
+                    <a href="/index"><button class="btn btn-lg btn-info m-2">
+                            <span class="fa "></span> Available Courses
+                        </button></a>
+                    <form class="clearfix mb-4" action="POST">
+                        <div class="form-group">
+                            <label for="course-name">Enter Course Name</label>
+                            <input type="text" id="course-name" class="form-control" aria-describedby="course-name"
+                                placeholder="Enter Course Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="course-description">Enter Course Description</label>
+                            <textarea class="form-control" id="course-description" aria-describedby="course-description"
+                                placeholder="Enter Course Description"></textarea>
+                        </div>
+                        <button id="submit" class="btn btn-info float-right">Submit</button>
+                    </form>
+                    <a href="/cart"><button class="btn btn-lg btn-info m-2">
+                            <span class="fa "></span> Shopping Cart
+                        </button></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>

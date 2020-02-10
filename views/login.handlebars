@@ -1,9 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+        Classy - One stop shop for tutors and students to provide and receive
+        services
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- local style sheet -->
+    <link rel="stylesheet" href="../public/styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Moment js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS CDN  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
 <div id="home">
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="jumbo">
+            <div class="jumbotext col-8 text-center">
+                <h1>Classy</h1>
+                <p class="lead">
+                    <i class="fa fa-book"></i>/<i class="fa fa-apple"></i> Where
+                    Students and Tutors Unite
+                </p>
+            </div>
+            {{!-- <br> --}}
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-8 offset-2">
-                <h1>{{msg}}</h1>
-                <h2>Login as Student / Instructor!</h2>
+                <h2>Login as Student/Instructor!</h2>
                 <form class="clearfix mb-4" action="POST">
                     <div class="form-group">
                         <label for="login_name">Login Username</label>
@@ -15,14 +55,14 @@
                         <input type="text" id="login-phone" class="form-control" aria-describedby="login-phone"
                             placeholder="Enter Login Phone">
                     </div>
-                    <button id="loginuser" class="btn btn-primary float-right">Login</button>
+                    <button id="loginuser" class="btn btn btn-info float-right">Login</button>
                 </form>
-                <h3>New user ??</h3>
+                <h3>New user?</h3>
 
-                <a href="/newstudent"><button class="btn btn-lg btn-primary">
+                <a href="/newstudent"><button class="btn btn-lg btn btn-info">
                         <span class="fa "></span> Register as a new student
                     </button></a>
-                <a href="/newinstructor"><button class="btn btn-lg btn-primary">
+                <a href="/newinstructor"><button class="btn btn-lg btn btn-info">
                         <span class="fa "></span> Register as a new instructor
                     </button></a>
             </div>

@@ -3,15 +3,20 @@
     <div class="col-8 offset-2">
       <div class="card mt-4">
         <div class="card-body">
-          <h5 class="card-title">Example</h5>
+          <h5 class="card-title">Course Info</h5>
           <p>
-            <strong>ID</strong>: {{example.id}}</p>
+            <strong>ID</strong>: {{example.dataValues.id}}</p>
           <p>
-          <p>
-            <strong>Text</strong>: {{example.text}}</p>
-          <p>
-            <strong>Description:</strong> {{example.description}}</p>
-            <a href="/">← Back To Home</a>
+            <p>
+              <strong>Course</strong>: {{example.dataValues.text}}</p>
+            <p>
+              <strong>Description:</strong> {{example.dataValues.description}}</p>
+
+            <a href="/index">← Back To Courses</a>
+            <button class="btn btn-lg btn-info m-2 update">
+              <span class="fa "></span> Edit
+            </button>
+
         </div>
       </div>
     </div>
