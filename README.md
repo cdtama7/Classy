@@ -1,5 +1,7 @@
 <img src="./public/styles/project2design.png" width="70" height="70" style="float: left; margin-right: 7px"/>
 
+## [Link to Project](https://teamfour.herokuapp.com/)
+
 # Classy - Where students & tutors unite
 
 <br>
